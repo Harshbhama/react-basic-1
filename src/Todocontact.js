@@ -5,9 +5,9 @@ function Todocontact(props){
   return(
 
     <div className = "contacts-name">
-        <img className = "img" src  = {props.imgUrl} />
-        <p>{props.name}</p>
-        <p>{props.phone}</p>
+        <img className = "img" src  = {props.contact.imgUrl} />
+        <p>{props.contact.name}</p>
+        <p>Phone no :{props.contact.phone}</p>
 
     </div>
 
