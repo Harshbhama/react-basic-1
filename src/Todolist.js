@@ -1,10 +1,11 @@
 import React from "react"
 
-function Todolist(){
+function Todolist(props){
   return(
         <div className = "todoitem">
-          <input type = "checkbox" />
-          <p className = "p-style"> Text </p>
+          <input type = "checkbox" checked = {props.item.completed} />
+          <p className = "p-style"> {props.item.text} </p>
+          
         </div>
 
 
